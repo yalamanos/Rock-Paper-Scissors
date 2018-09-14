@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="info" id="player">
+            <h1>Player:</h1> 
+            <p id="playerOutcome">-</p>
+        </div>
+             
+            <!-- <p class = 'playerSelection' id = 'rockSelection'>-</p>
+            <p class = 'playerSelection' id = 'paperSelection'>-</p>
+            <p class = 'playerSelection' id = 'scissorsSelection'>-</p> -->
+            
+            <!-- <div class="playerSelection">  
+                <p class = 'playerSelection' id = 'rockSelection'>-</p>
+                <p class = 'playerSelection' id = 'paperSelection'>-</p>
+                <p class = 'playerSelection' id = 'scissorsSelection'>-</p>
+            </div>  -->
+
+        <div class="playerContainer">
+            
+            <div class="playerChoice" id="playerRock">
+                <i class="player far fa-hand-rock"></i>
+            </div>
+            <div class="playerChoice" id="playerPaper">
+                    <i class="player far fa-hand-paper"></i>
+                </div>
+            <div class="playerChoice" id="playerScissors">
+                <i class="player far fa-hand-scissors"></i>
+            </div>
+        </div>
+
+        <h2 id = 'tally'> Wins:    Draws:    Losses:  </h2>
+        <a class = 'button' id = 'reset' href="#"><i class="fas fa-retweet"></i></a>
+
+        <div class="info" id="computer">
+            <h1>CPU:</h1>
+            <p id="cpuOutcome">-</p>
+        </div>
+
+        <div class="computerContainer">
+            <div class="cpuChoice" id="computerRock">
+                <i class="far fa-hand-rock"></i>
+            </div>
+            <div class="cpuChoice" id="computerPaper">
+                    <i class="far fa-hand-paper"></i>
+                </div>
+            <div class="cpuChoice" id="computerScissors">
+                <i class="far fa-hand-scissors"></i>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
