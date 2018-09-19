@@ -13,17 +13,16 @@ let lose = 0;
 console.log(playerChoices);
 
 const pick = (event) => {
-    // console.log(event.target);
     const selection = event.target;
-    if (selection == playerChoices[0]) {
-        playerOutcome.textContent = 'Rock';
-    }
-    else if (selection == playerChoices[1]) {
-        playerOutcome.textContent = 'Paper';
-    }
-    else if (selection == playerChoices[2]) {
-        playerOutcome.textContent = 'Scissors';
-    }
+        if (selection == playerChoices[0]) {
+            playerOutcome.textContent = 'Rock';
+        }
+        else if (selection == playerChoices[1]) {
+            playerOutcome.textContent = 'Paper';
+        }
+        else if (selection == playerChoices[2]) {
+            playerOutcome.textContent = 'Scissors';
+        }
 
     cpuChoice();
     checkWinner();
@@ -31,24 +30,24 @@ const pick = (event) => {
 
 const cpuChoice = () => {
     const number = (Math.floor(Math.random() *3)) +1;
-    if (number == 1) {
-        cpuOutcome.textContent = 'Rock';
-        document.getElementById('computerRock').style.boxShadow = "0px 0px 20px white";
-        document.getElementById('computerPaper').style.boxShadow = "0px 0px 20px transparent";
-        document.getElementById('computerScissors').style.boxShadow = "0px 0px 20px transparent";
-    }
-    else if (number == 2) {
-        cpuOutcome.textContent = 'Paper';
-        document.getElementById('computerPaper').style.boxShadow = "0px 0px 20px white"
-        document.getElementById('computerRock').style.boxShadow = "0px 0px 20px transparent";
-        document.getElementById('computerScissors').style.boxShadow = "0px 0px 20px transparent";
-    }
-    else if (number == 3) {
-        cpuOutcome.textContent = 'Scissors';
-        document.getElementById('computerScissors').style.boxShadow = "0px 0px 20px white"
-        document.getElementById('computerPaper').style.boxShadow = "0px 0px 20px transparent";
-        document.getElementById('computerRock').style.boxShadow = "0px 0px 20px transparent";
-    }
+        if (number == 1) {
+            cpuOutcome.textContent = 'Rock';
+            document.getElementById('computerRock').style.boxShadow = "0px 0px 20px white";
+            document.getElementById('computerPaper').style.boxShadow = "0px 0px 20px transparent";
+            document.getElementById('computerScissors').style.boxShadow = "0px 0px 20px transparent";
+        }
+        else if (number == 2) {
+            cpuOutcome.textContent = 'Paper';
+            document.getElementById('computerPaper').style.boxShadow = "0px 0px 20px white"
+            document.getElementById('computerRock').style.boxShadow = "0px 0px 20px transparent";
+            document.getElementById('computerScissors').style.boxShadow = "0px 0px 20px transparent";
+        }
+        else if (number == 3) {
+            cpuOutcome.textContent = 'Scissors';
+            document.getElementById('computerScissors').style.boxShadow = "0px 0px 20px white"
+            document.getElementById('computerPaper').style.boxShadow = "0px 0px 20px transparent";
+            document.getElementById('computerRock').style.boxShadow = "0px 0px 20px transparent";
+        }
 }
 
 const checkWinner = () => {
