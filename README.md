@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors
-Pairs Project at Code Nation
+short pairs Project at Code Nation
